@@ -10,7 +10,8 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('heros app is running!');
+    expect(page.getTitleText()).toEqual('Tour of Heros');
+
   });
 
   afterEach(async () => {
@@ -19,5 +20,6 @@ describe('workspace-project App', () => {
     expect(logs).not.toContain(jasmine.objectContaining({
       level: logging.Level.SEVERE,
     } as logging.Entry));
+    //for (let i = 0 ; i < 1000000 ; i++) { console.log(i)}
   });
 });
